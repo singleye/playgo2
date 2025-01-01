@@ -1,5 +1,9 @@
 # playgo2
 
+This project has some programs to play with unitree go2 quadruped robot.
+
+* doggy: under development. It will act as a dog to play with the human around.
+
 # Setup environemnt
 
 ## Build opencv with gstreamer
