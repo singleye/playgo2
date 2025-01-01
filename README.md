@@ -2,7 +2,9 @@
 
 # Setup environemnt
 
-Build opencv with gstreamer
+## Build opencv with gstreamer
+
+In order to capture video through opencv, you need to build opencv with gstreamer support. Here is how you can do it:
 
 ```
 cd deps
