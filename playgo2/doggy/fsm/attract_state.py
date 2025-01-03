@@ -19,7 +19,7 @@ class AttractState(BaseState):
     def enter(self):
         logger("Entering attract state...")
 
-    def do_action(self):
+    def do_action(self, controller):
         logger("Attracting...")
 
     def leave(self):

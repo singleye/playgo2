@@ -10,13 +10,14 @@ from .stroll_state import StrollState, STATE_STROLL
 logger = get_logger(__name__)
 
 class FSM(object):
-    def __init__(self: object) -> None:
+    def __init__(self: object, controller: object) -> None:
         self.states = {
                 STATE_ATTRACT: AttractState(),
                 STATE_FOLLOW: FollowState(),
                 STATE_STROLL: StrollState(),
             }
         self.cur_state = None
+        self.controller = controller
 
     def set_state(self: object, state: str) -> None:
         """
@@ -32,4 +33,4 @@ class FSM(object):
         """
         Update the current state.
         """
-        self.cur_state.do_action()
+        self.cur_state.do_action(self.controller)

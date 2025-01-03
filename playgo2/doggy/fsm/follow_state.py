@@ -19,7 +19,7 @@ class FollowState(BaseState):
     def enter(self):
         logger("Entering follow state...")
 
-    def do_action(self):
+    def do_action(self, controller):
         logger("Following...")
 
     def leave(self):
